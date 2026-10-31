@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <title>وكالة الجوالات</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: #101827;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-box {
+      width: 100%;
+      max-width: 400px;
+      padding: 28px 22px;
+      background: #1c2738;
+      border: 1px solid #344258;
+      border-radius: 18px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 52px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 27px;
+      margin: 8px 0;
+      color: #60d6a5;
+    }
+
+    .subtitle {
+      color: #c5cedb;
+      margin-bottom: 28px;
+      line-height: 1.8;
+    }
+
+    label {
+      display: block;
+      text-align: right;
+      margin: 15px 0 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #46566e;
+      border-radius: 9px;
+      background: #101827;
+      color: white;
+      font-size: 16px;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #60d6a5;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 22px;
+      border: none;
+      border-radius: 9px;
+      background: #60d6a5;
+      color: #10251d;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .note {
+      margin-top: 20px;
+      color: #aab7c8;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="login-box">
+    <div class="logo">📱</div>
+
+    <h1>وكالة الجوالات</h1>
+
+    <p class="subtitle">
+      نظام إدارة الأجهزة والإكسسوارات والمحاسبة
+    </p>
+
+    <form id="loginForm">
+      <label for="username">اسم المستخدم</label>
+      <input
+        id="username"
+        type="text"
+        placeholder="أدخل اسم المستخدم"
+        autocomplete="username"
+        required
+      >
+
+      <label for="password">كلمة المرور</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="أدخل كلمة المرور"
+        autocomplete="current-password"
+        required
+      >
+
+      <button type="submit">تسجيل الدخول</button>
+    </form>
+
+    <p class="note">
+      نسخة تجريبية قيد التطوير.<br>
+      سيتم تفعيل تسجيل الدخول الآمن بعد إعداد الخادم.
+    </p>
+  </main>
+
+  <script>
+    document.getElementById("loginForm").addEventListener(
+      "submit",
+      function(event) {
+        event.preventDefault();
+
+        alert(
+          "هذه واجهة تجريبية فقط. " +
+          "لم يتم تفعيل تسجيل الدخول بعد."
+        );
+      }
+    );
+  </script>
+</body>
+</html>
